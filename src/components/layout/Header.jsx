@@ -23,10 +23,10 @@ function Header() {
           <Link to="/" className="text-white text-decoration-none d-flex align-items-center">
             <img 
               src="/images/european-hare-6121jpg.webp" 
-              alt="Заєць" 
+              alt="Ягуар" 
               className="site-logo rounded-circle me-2"
             />
-            <span className="fs-4">Сайт про зайців</span>
+            <span className="fs-4">Сайт про ягуарів</span>
           </Link>
         </div>
 
@@ -35,16 +35,16 @@ function Header() {
             Головна
           </Link>
           <Link to="/morphology" className={`nav-link text-white ${location.pathname === '/morphology' ? 'active' : ''}`}>
-            Зовнішній вигляд зайців
+            Зовнішній вигляд ягуарів
           </Link>
           <Link to="/nutrition" className={`nav-link text-white ${location.pathname === '/nutrition' ? 'active' : ''}`}>
-            Харчування зайців
+            Харчування ягуарів
           </Link>
           <Link to="/population" className={`nav-link text-white ${location.pathname === '/population' ? 'active' : ''}`}>
-            Ареал зайців
+            Ареал ягуарів
           </Link>
           <Link to="/photo" className={`nav-link text-white ${location.pathname === '/photo' ? 'active' : ''}`}>
-            Фотографії зайців
+            Фотографії ягуарів
           </Link>
         </nav>
 
