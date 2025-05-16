@@ -15,7 +15,7 @@ function App() {
   return (
     <SearchProvider>
       <Router>
-        <div className="d-flex flex-column vh-100"> {/* Головний Flexbox-контейнер */}
+        <div className="custom-green-theme d-flex flex-column vh-100"> {/* Головний Flexbox-контейнер */}
           
           {/* HEADER: Фіксований блок зверху */}
           <header className="flex-shrink-0">
