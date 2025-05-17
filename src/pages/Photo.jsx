@@ -3,12 +3,12 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function Photo() {
   const images = [
-    { src: '/images/1200px-haas-in-het-grasjpg.webp', alt: 'Зайці в траві' },
-    { src: '/images/1200px-hasebeioberwerbejpg.webp', alt: 'Зайці в полі' },
-    { src: '/images/european-hare-6121jpg.webp', alt: 'Європейський заєць' },
-    { src: '/images/fFKuESpf7VTCGBNPscig.webp', alt: 'Зайці на лузі' },
-    { src: '/images/halljnes.webp', alt: 'Зайці в лісі' },
-    { src: '/images/zu6YRoYqGYVyExZ54dDT.webp', alt: 'Зайці на лузі' }
+    { src: '/images/Panthera_onca.webp', alt: '' },
+    { src: '/images/06ABC715-EDAB-456B-81A5-447B61586297.webp', alt: '' },
+    { src: '/images/84b2be3bns_Medium_WW225849.webp', alt: '' },
+    { src: '/images/jaguar-photography-3.webp', alt: '' },
+    { src: '/images/F596450D-01DF-4DCC-802C-5A371068A080.webp', alt: '' },
+    { src: '/images/5w6xbrnkmk_Responsible_Forestry_8.10.2012_Biodiversiry_Loss_HI_7474.webp', alt: '' }
   ];
 
   return (

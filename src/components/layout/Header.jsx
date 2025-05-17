@@ -22,7 +22,7 @@ function Header() {
         <div className="logo-container">
           <Link to="/" className="text-white text-decoration-none d-flex align-items-center">
             <img 
-              src="/images/european-hare-6121jpg.webp" 
+              src="/images/Panthera_onca.webp" 
               alt="Ягуар" 
               className="site-logo rounded-circle me-2"
             />
