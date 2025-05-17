@@ -15,15 +15,11 @@ function App() {
   return (
     <SearchProvider>
       <Router>
-        <div className="custom-green-theme d-flex flex-column vh-100"> {/* Головний Flexbox-контейнер */}
+        {/* Flexbox-макет на всю висоту екрану */}
+        <div className="d-flex flex-column min-vh-100 custom-green-theme">
+          <Header />
           
-          {/* HEADER: Фіксований блок зверху */}
-          <header className="flex-shrink-0">
-            <Header />
-          </header>
-
-          {/* MAIN: Прокручуваний вміст сторінок */}
-          <main className="flex-grow-1 overflow-auto">
+          <main className="flex-fill">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/morphology" element={<Morphology />} />
@@ -33,12 +29,8 @@ function App() {
               <Route path="/search" element={<Search />} />
             </Routes>
           </main>
-
-          {/* FOOTER: Фіксований блок знизу */}
-          <footer className="flex-shrink-0">
-            <Footer />
-          </footer>
-
+          
+          <Footer />
         </div>
       </Router>
     </SearchProvider>
