@@ -8,8 +8,8 @@ function Header() {
   const [searchInput, setSearchInput] = useState('');
   const { handleSearch } = useSearch();
 
-  const onSubmit = (e) => {
-    e.preventDefault();
+  const onSubmit = (event) => {
+    event.preventDefault();
     if (searchInput.trim()) {
       handleSearch(searchInput);
       navigate(`/search?query=${encodeURIComponent(searchInput)}`);
@@ -34,11 +34,11 @@ function Header() {
 
         {/* Навігація */}
         <nav className="nav-main">
-          <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>Головна</Link>
-          <Link to="/morphology" className={`nav-link ${location.pathname === '/morphology' ? 'active' : ''}`}>Зовнішній вигляд</Link>
-          <Link to="/nutrition" className={`nav-link ${location.pathname === '/nutrition' ? 'active' : ''}`}>Харчування</Link>
-          <Link to="/population" className={`nav-link ${location.pathname === '/population' ? 'active' : ''}`}>Ареал</Link>
-          <Link to="/photo" className={`nav-link ${location.pathname === '/photo' ? 'active' : ''}`}>Фотографії</Link>
+          <Link to="/" className={`nav-link text-white ${location.pathname === '/' ? 'active' : ''}`}>Головна</Link>
+          <Link to="/morphology" className={`nav-link text-white ${location.pathname === '/morphology' ? 'active' : ''}`}>Зовнішній вигляд</Link>
+          <Link to="/nutrition" className={`nav-link text-white ${location.pathname === '/nutrition' ? 'active' : ''}`}>Харчування</Link>
+          <Link to="/population" className={`nav-link text-white ${location.pathname === '/population' ? 'active' : ''}`}>Ареал</Link>
+          <Link to="/photo" className={`nav-link text-white ${location.pathname === '/photo' ? 'active' : ''}`}>Фотографії</Link>
         </nav>
 
         {/* Пошук */}
